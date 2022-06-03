@@ -336,22 +336,22 @@
                   <div class="col-12 col-lg-6">
                      <div class="alert alert-danger" role="alert" data-t>send.feeMessage</div>
                      <form action="javascript:void(0)">
-                        <div class="mb-4">
+                        <!-- <div class="mb-4">
                            <label class="form-label fw-bold" data-t>send.currency</label>
                            <select class="form-select" name="sendCurrency" id="sendCurrency">
                               <option data-attr-t data-attr-t-interpolate value-t="{{send.firstCurrencyId}}" selected data-t>send.firstCurrencyName</option>
-                              <!-- <option data-attr-t data-attr-t-interpolate value-t="{{send.secondCurrencyId}}" data-t>send.secondCurrencyName</option> -->
+                              <option data-attr-t data-attr-t-interpolate value-t="{{send.secondCurrencyId}}" data-t>send.secondCurrencyName</option>
                               <option value="66DUhUoJaoZcstkKpcoN3FUcqjB6v8VJd5ZQd6RsPxhv">AINT</option>
-                              <!-- <option value="4zbprK67hsa732oSGLB6HzE8Yfdj3BcTcehCeTA1G5Lf">ANOTE</option> -->
+                              <option value="4zbprK67hsa732oSGLB6HzE8Yfdj3BcTcehCeTA1G5Lf">ANOTE</option>
                               <option value="">WAVES</option>
                             </select>
-                        </div>
-                        <div class="mb-3">
+                        </div> -->
+                        <div class="mb-4">
                            <label class="form-label fw-bold" data-t>receive.account</label>
-                           <div class="input-group mb-3 input-group-sm">
-                              <input type="text" class="form-control" data-attr-t data-attr-t-interpolate placeholder-t="{{send.address}}" aria-label-t="{{send.address}}" id="addressRec">
+                           <div class="input-group mb-3 input-group-lg">
+                              <input type="text" class="form-control" data-attr-t data-attr-t-interpolate placeholder-t="{{send.address}}" aria-label-t="{{send.address}}" id="addressRec" style="font-size: 1rem;">
                               <div class="input-group-append">
-                                 <button class="btn btn-primary" type="button" id="qrButton">
+                                 <button class="btn btn-primary btn-lg" type="button" id="qrButton">
                                     <i class="bi bi-upc-scan"></i>
                                  </button>
                               </div>
@@ -359,7 +359,9 @@
                         </div>
                         <div class="mb-4">
                            <label class="form-label fw-bold" data-t>send.amount</label>
-                           <input type="text" class="form-control" data-attr-t data-attr-t-interpolate placeholder-t="{{send.amount2}}" aria-label-t="{{send.amount2}}" id="amount">
+                           <div class="input-group input-group-lg">
+                              <input type="text" class="form-control" data-attr-t data-attr-t-interpolate placeholder-t="{{send.amount2}}" aria-label-t="{{send.amount2}}" id="amount" style="font-size: 1rem; line-height: 2;">
+                           </div>
                         </div>
                         <div id="sendError" class="form-text text-danger" style="display: none;"></div>
                         <div id="sendSuccess" class="form-text text-success mt-3 mb-2" style="display: none;" data-t>send.sendMessage</div>
