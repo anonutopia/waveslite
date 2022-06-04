@@ -418,7 +418,7 @@ class Wallet {
         if (a && recipient) {
             try {
                 var amount: number = +a;
-                await this.signer.send({
+                await this.signer.transfer({
                     amount: Math.floor(amount * decimalPlaces),
                     recipient: recipient,
                     assetId: currency,
@@ -630,7 +630,7 @@ class Wallet {
 
     private async populateData() {
         $("#address").val(this.address);
-        var historyHref = "https://wavesexplorer.com/address/" + this.address + "/tx";
+        var historyHref = "https://aint.live/address/" + this.address + "/tx";
         $("#history").attr("href", historyHref);
         this.generateQR();
 
